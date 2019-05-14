@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "828320162714",
+    "firebase_url": "https://dunga-39a86.firebaseio.com",
+    "project_id": "dunga-39a86",
+    "storage_bucket": "dunga-39a86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828320162714:android:2ed8cd8beae9d0c6",
+        "android_client_info": {
+          "package_name": "com.example.dungaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828320162714-0b4oidef9ko95kqe4hbr3ias0ut3gird.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dungaa",
+            "certificate_hash": "037335e6bf35bf65b4a6bb0360014dd158318615"
+          }
+        },
+        {
+          "client_id": "828320162714-jaerfuvpg9s8133g1qhu76h4g0cbivcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOxDh4xF6UeIeJS2DOMx7GrEzxM7mBVdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828320162714-jaerfuvpg9s8133g1qhu76h4g0cbivcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

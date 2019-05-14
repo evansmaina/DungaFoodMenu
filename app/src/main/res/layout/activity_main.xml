@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/burger_background1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoImg"
+        android:src="@drawable/loginpic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appName"
+        android:src="@drawable/appname"
+        android:layout_below="@id/logoImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there! Welcome to Kong Dunga.
+Where we connect you with your favourite Dunga shop and avail services such as favourite Meals, foodMenu updates and Instant food orders."
+        android:layout_below="@id/appName"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+
+
+
+        android:textSize="24sp"
+        android:id="@+id/txtVw"
+
+        tools:ignore="RtlHardcoded" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:weightSum="2"
+        >
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:backgroundTint="@color/SignUp"
+            android:onClick="onSignUp"
+            />
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="SignIn"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/SignIn"
+            android:onClick="onSignIn"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

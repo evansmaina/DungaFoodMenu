@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/burger_background1"
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person_black_24dp"
+            app:civ_border_color="@android:color/white"
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="@android:color/white"
+
+            android:id="@+id/profilepic"
+            android:onClick="profileOptions"
+            />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernamelayout"
+        android:layout_centerVertical="true"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:id="@+id/username"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emaillayout"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/usernamelayout"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailsignup"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordlayout"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/emaillayout"
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:id="@+id/passwordsignup"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="24sp"
+        android:layout_below="@id/passwordlayout"
+        android:layout_marginTop="20sp"
+        android:textColor="@android:color/white"
+        android:onClick="onSignInAccount"
+        android:id="@+id/accountlogtxt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:weightSum="1"
+        >
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpbutton"
+            android:text="SignUp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:backgroundTint="@color/SignUp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

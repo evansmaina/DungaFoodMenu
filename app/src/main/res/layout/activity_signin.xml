@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin"
+    android:background="@drawable/burger_background1"
+    >
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/emaillayout"
+    android:layout_centerVertical="true"
+    >
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailsignin"
+        />
+
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordlayout"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/emaillayout"
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:id="@+id/passwordsignin"
+
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@id/passwordlayout"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/accountxt"
+        android:textSize="24sp"
+        android:onClick="onSignupAccount"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:weightSum="1"
+        >
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="SignIn"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/SignIn"
+            android:id="@+id/signInBtn"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/gallery"
+        android:icon="@drawable/ic_insert_photo_black_24dp"
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:title="Gallery"
+
+        />
+    <item android:id="@+id/camera"
+        android:icon="@drawable/ic_camera_black_24dp"
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:title="Camera"
+
+        />
+
+
+</menu>
